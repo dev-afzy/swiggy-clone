@@ -1,24 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div id = "root">Not rendered</div>
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script>
-  // List of elements
-
-  const footer = React.createElement('h3', {id: 'footer'}, 'Footer')
-  const header = React.createElement('h1', {id: 'name', style:{fontSize: '40px'}}, 'Hello world');
-  const list = React.createElement('div', {id: 'container'}, [undefined, header, header], footer)
-
-  const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(list);
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">Not rendered</div>
+    <script type="module" src="/App.js"></script>
+  </body> 
 </html>
