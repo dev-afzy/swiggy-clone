@@ -1,0 +1,264 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap";
+body {
+  scroll-behavior: smooth;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  color: #3d4152;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.search-body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.input-primary {
+  box-shadow: none;
+  width: 350px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 4px;
+  padding: 10px;
+}
+
+.primary-btn {
+  width: 100px;
+  background-color: #ff8e13;
+  border: none;
+  border-radius: 4px;
+  margin-left: 2px;
+  padding: 10px;
+}
+
+.header {
+  justify-content: space-between;
+  padding: 10px 30px;
+  display: flex;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items > li {
+  padding: 10px;
+  list-style-type: none;
+}
+
+.header-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.restaurant-main {
+  grid-template-columns: auto auto auto;
+  padding: 20px 10%;
+  display: grid;
+}
+
+.outer {
+  width: 330px;
+  height: 290px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.shimmer-outer {
+  width: 330px;
+  height: 290px;
+  background-color: #cccaca;
+  border: 1px solid #f0f0f0;
+  margin-top: 20px;
+  animation-name: shimmer-outer;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+}
+
+@keyframes shimmer-outer {
+  50% {
+    background-color: #c8c7c7;
+  }
+
+  100% {
+    background-color: #e3e3e3;
+  }
+}
+
+.inner {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+}
+
+.shimmer-inner {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  background-color: #c8c7c7;
+  animation-name: shimmer-inner;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shimmer-outer {
+  50% {
+    background-color: #c8c7c7;
+  }
+
+  100% {
+    background-color: #b1b1b1;
+  }
+}
+
+.item {
+  height: 30%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 26px;
+  display: flex;
+}
+
+.item-name h4 {
+  color: #11313c;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item-name p {
+  color: #949a98;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.item-price {
+  flex-direction: column;
+  display: flex;
+}
+
+.item-price p {
+  color: #f7736e;
+  text-align: right;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating > div {
+  width: 15px;
+  height: 15px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  background: #f7736e;
+}
+
+.outer:hover {
+  transform: scale(1.01);
+}
+
+.restaurant-card {
+  min-width: 250px;
+  max-width: 250px;
+  height: 380px;
+  border-radius: 6px;
+  margin: 20px 10px 10px;
+  transition: all .3s;
+  box-shadow: 0 4px 8px #0003;
+}
+
+.restaurant-img {
+  width: 250px;
+  height: 200px;
+}
+
+.restaurant-sub-sec p {
+  line-break: anywhere;
+}
+
+.restaurant-sub-sec {
+  color: gray;
+}
+
+.restaurant-card:hover {
+  box-shadow: 0 8px 16px #0003;
+}
+
+.restaurant-container {
+  padding: 2px 16px;
+}
+
+.restaurant-details {
+  grid-template-columns: auto auto;
+  padding: 20px 10%;
+  display: grid;
+}
+
+.restaurant-details .section-1 {
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+}
+
+.restaurant-details .section-2 ul {
+  height: 62vh;
+  overflow-y: scroll;
+}
+
+.restaurant-details .section-2 h2 {
+  margin: 0;
+}
+
+.restaurant-details .section-2 ul li {
+  white-space: nowrap;
+}
+
+.restaurant-details .section-2 {
+  padding: 20px;
+}
+
+.restaurant-details .section-1 .img-restaurant {
+  width: 400px;
+  height: 300px;
+}
+
+.page_404 {
+  text-align: center;
+  background: #fff;
+  padding: 40px 0;
+  font-family: Arvo, serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  height: 400px;
+  background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
+  background-position: center;
+}
+
+.four_zero_four_bg h1, .four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  background: #39ac31;
+  margin: 20px 0;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #fff !important;
+}
+
+.contant_box_404 {
+  margin-top: -50px;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
